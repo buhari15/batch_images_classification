@@ -51,10 +51,8 @@ def classify():
         
         }
 
-        with open("batch_result.jsonl", 'a') as f:
-            output_result = f.write(str(data))
 
-    return flask.jsonify(output_result)
+    return flask.jsonify(str(data))
 
 
 if __name__ == "__main__":
