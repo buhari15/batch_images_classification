@@ -49,7 +49,7 @@ def classify():
                 'time': now.strftime("%d %b %G" )
                 }
 
-        with open("batch_result.csv", 'a') as f:
+        with open("batch_result.jsonl", 'a') as f:
             output_result = f.write(str(data))
 
     return flask.jsonify(output_result)
