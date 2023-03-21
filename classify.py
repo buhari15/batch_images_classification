@@ -42,18 +42,15 @@ def classify():
         class_label = int(np.argmax(single_results))
         class_likelihood = single_results[class_label]
         class_name = class_names[class_label]
-        
-        data = {
+        data_list.append({
             'images_name': ix,
             'label': class_name,
             'probability': class_likelihood,
             'date': now.strftime("%d %b %G" ),
             'time': now.strftime("%H:%M")
-        
-        }
-    data_list.append(data)
-
+        })
     return flask.jsonify(str(data_list))
+
 
 
 if __name__ == "__main__":
