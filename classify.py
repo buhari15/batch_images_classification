@@ -10,6 +10,8 @@ from preprocessing import processing_img
 from datetime import datetime
 import datetime
 import json
+from flask import jsonify
+import pprint
 
 
 app = flask.Flask(__name__)
@@ -49,7 +51,9 @@ def classify():
             'date': now.strftime("%d %b %G" ),
             'time': now.strftime("%H:%M")
         })
-    return flask.jsonify(str(data_list))
+       
+        
+    return jsonify(str(data_list))
 
 
 
