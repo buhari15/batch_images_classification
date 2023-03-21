@@ -8,6 +8,7 @@ import os
 import numpy as np
 from preprocessing import processing_img
 from datetime import datetime
+import datetime
 import json
 
 
@@ -31,7 +32,7 @@ images_path = "/Users/buhariabubakar/Desktop/from_model_to_production/images"
 
 @app.route("/classify", methods=['POST', 'GET'])
 def classify():
-    now = datetime.now()
+    now = datetime.datetime.now()
     images_lists = images_path
     for ix in os.listdir(images_lists):
         pre_processed_im = processing_img(images_lists + '//' + ix)
