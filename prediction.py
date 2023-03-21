@@ -31,7 +31,7 @@ images_path = "/Users/buhariabubakar/Desktop/from_model_to_production/images"
 
 @app.route("/classify", methods=['POST', 'GET'])
 def classify():
-    
+    now = datetime.now()
     images_lists = images_path
     for ix in os.listdir(images_lists):
         pre_processed_im = processing_img(images_lists + '//' + ix)
@@ -44,7 +44,7 @@ def classify():
         data = {'images_name': ix,
                 'label': class_name,
                 'probability': class_likelihood,
-                'date': datetime.now().strftime("%H:%M:%S")
+                'date': now().strftime("%d %b %G %H:%M")
                 }
 
         with open("batch_result.csv", 'a') as f:
