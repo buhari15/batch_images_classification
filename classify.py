@@ -34,6 +34,7 @@ images_path = "/Users/buhariabubakar/Desktop/from_model_to_production/images"
 def classify():
     now = datetime.datetime.now()
     images_lists = images_path
+    data_list = []
     for ix in os.listdir(images_lists):
         pre_processed_im = processing_img(images_lists + '//' + ix)
         results = model.predict(pre_processed_im)
@@ -41,25 +42,25 @@ def classify():
         class_label = int(np.argmax(single_results))
         class_likelihood = single_results[class_label]
         class_name = class_names[class_label]
-
+        
         data = {
             'images_name': ix,
             'label': class_name,
             'probability': class_likelihood,
-            'date': now.strftime("%H:%M"),
-            'time': now.strftime("%d %b %G" )
+            'date': now.strftime("%d %b %G" ),
+            'time': now.strftime("%H:%M")
         
         }
+    data_list.append(data)
 
-
-    return flask.jsonify(str(data))
+    return flask.jsonify(data_list)
 
 
 if __name__ == "__main__":
     print("Loading the model please wait")
 
     load_model_trained()
-    app.run(debug=False, threaded=True)
+    app.run(debug=True, port=9191, threaded=True)
     
 
 
