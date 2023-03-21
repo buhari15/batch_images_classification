@@ -26,7 +26,7 @@ def load_model_trained():
     print("Model loaded")
 
 
-images_path = "/Users/buhariabubakar/PycharmProjects/model_production/images"
+images_path = "/Users/buhariabubakar/Desktop/from_model_to_production/images"
 
 
 @app.route("/classify", methods=['POST', 'GET'])
