@@ -45,7 +45,8 @@ def classify():
         data = {'images_name': ix,
                 'label': class_name,
                 'probability': class_likelihood,
-                'date': now.strftime("%d %b %G %H:%M")
+                'date': now.strftime("%H:%M"),
+                'time': now.strftime("%d %b %G" )
                 }
 
         with open("batch_result.csv", 'a') as f:
