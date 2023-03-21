@@ -44,7 +44,7 @@ def classify():
         data = {'images_name': ix,
                 'label': class_name,
                 'probability': class_likelihood,
-                'date': now()
+                'date': now
                 }
 
         with open("batch_result.csv", 'a') as f:
