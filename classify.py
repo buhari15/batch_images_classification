@@ -53,7 +53,7 @@ def classify():
         }
     data_list.append(data)
 
-    return flask.jsonify(data_list)
+    return flask.jsonify(str(data_list))
 
 
 if __name__ == "__main__":
