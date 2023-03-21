@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     load_model_trained()
     app.run(debug=False, threaded=True)
-    run_simple('localhost', 5000, app, use_reloader=True)
+    
 
 
 
