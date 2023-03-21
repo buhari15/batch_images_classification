@@ -42,12 +42,14 @@ def classify():
         class_likelihood = single_results[class_label]
         class_name = class_names[class_label]
 
-        data = {'images_name': ix,
-                'label': class_name,
-                'probability': class_likelihood,
-                'date': now.strftime("%H:%M"),
-                'time': now.strftime("%d %b %G" )
-                }
+        data = {
+            'images_name': ix,
+            'label': class_name,
+            'probability': class_likelihood,
+            'date': now.strftime("%H:%M"),
+            'time': now.strftime("%d %b %G" )
+        
+        }
 
         with open("batch_result.jsonl", 'a') as f:
             output_result = f.write(str(data))
