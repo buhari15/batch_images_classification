@@ -28,7 +28,6 @@ pipeline {
       steps{
         sh 'git add .'
         sg 'commit -am.'
-        sh 'git checkout -b master'
         sh 'push origin master'
       }
     }
