@@ -28,6 +28,8 @@ pipeline {
   post{
     success {
       sh 'git status'
+      sh 'git add .'
+      sh 'git commit -m "classification'
     }
   }
 }
