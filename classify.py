@@ -51,6 +51,9 @@ def classify():
             'date': now.strftime("%d %b %G" ),
             'time': now.strftime("%H:%M")
         })
+    
+    with open('classification.csv', 'a') as c:
+        c.write(str(data_list))
        
         
     return jsonify(str(data_list))
@@ -62,6 +65,7 @@ if __name__ == "__main__":
 
     load_model_trained()
     app.run(debug=True, port=9191, threaded=True)
+    
     
 
 
