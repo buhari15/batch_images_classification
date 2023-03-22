@@ -26,7 +26,10 @@ pipeline {
     }
     stage('Push to git'){
       steps{
-        sh 'git remote -v'
+        sh 'git add .'
+        sg 'commit -am.'
+        sh 'git checkout -b master'
+        sh 'push origin master'
       }
     }
   }
