@@ -56,7 +56,7 @@ def classify():
     dataframe = pd.DataFrame(data_list)
    
     
-    with open('classification.csv', 'ab') as c:
+    with open('classification.csv', 'a') as c:
             c.write(str(dataframe))
        
         
