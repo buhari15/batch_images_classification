@@ -1,0 +1,21 @@
+        images_name        label  probability         date   time
+0       trouser.jpg      Trouser     1.000000  22 Mar 2023  11:32
+1        sandal.jpg       Sandal     1.000000  22 Mar 2023  11:32
+2      sneaker1.jpg      Sneaker     0.999994  22 Mar 2023  11:32
+3         shirt.png  T-Shirt/Top     1.000000  22 Mar 2023  11:32
+4      sneaker2.jpg      Sneaker     1.000000  22 Mar 2023  11:32
+5     pullover1.jpg        Shirt     1.000000  22 Mar 2023  11:32
+6      pullover.jpg     Pullover     1.000000  22 Mar 2023  11:32
+7          bag1.jpg          Bag     1.000000  22 Mar 2023  11:32
+8           top.jpg  T-Shirt/Top     1.000000  22 Mar 2023  11:32
+9          coat.jpg        Shirt     1.000000  22 Mar 2023  11:32
+10     trouser1.jpg      Trouser     1.000000  22 Mar 2023  11:32
+11  t-shirt top.jpg  T-Shirt/Top     1.000000  22 Mar 2023  11:32
+12   ankle boot.jpg       Sandal     1.000000  22 Mar 2023  11:32
+13          sht.jpg  T-Shirt/Top     1.000000  22 Mar 2023  11:32
+14         sht1.jpg        Dress     1.000000  22 Mar 2023  11:32
+15      sneaker.jpg       Sandal     1.000000  22 Mar 2023  11:32
+16   ankle_boot.jpg   Ankle Boot     1.000000  22 Mar 2023  11:32
+17      sandal1.jpg       Sandal     1.000000  22 Mar 2023  11:32
+18      sandal3.jpg       Sandal     1.000000  22 Mar 2023  11:32
+19          bag.jpg          Bag     1.000000  22 Mar 2023  11:32
