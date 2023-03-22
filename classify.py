@@ -56,8 +56,7 @@ def classify():
    
     
     with open('classification.csv', 'a') as c:
-        csv_data = dataframe.to_csv(dataframe)
-        c.write(str(csv_data))
+        c.write(str(dataframe))
        
         
     return jsonify(str(data_list))
