@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Push to git'){
       steps{
-        sh 'git branch -b'
+        sh 'git branch -v'
       }
     }
   }
