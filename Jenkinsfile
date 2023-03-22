@@ -29,7 +29,7 @@ pipeline {
         sh 'git add .'
         sh 'git commit -m "committed"'
         sh 'git checkout -b master'
-        sh 'push origin master'
+        sh 'git push origin master'
       }
     }
   }
