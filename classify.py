@@ -30,7 +30,8 @@ def load_model_trained():
 
 
 images_path = "/Users/buhariabubakar/Desktop/from_model_to_production/images"
-
+result_path = "/Users/buhariabubakar/Desktop/from_model_to_production/classification.csv"
+emptyFile = os.stat(result_path).st_size == 0
 
 @app.route("/classify", methods=['POST', 'GET'])
 def classify():
@@ -55,8 +56,8 @@ def classify():
     dataframe = pd.DataFrame(data_list)
    
     
-    with open('classification.csv', 'a') as c:
-        c.write(str(dataframe))
+    with open('classification.csv', 'ab') as c:
+            c.write(str(dataframe))
        
         
     return jsonify(str(data_list))
