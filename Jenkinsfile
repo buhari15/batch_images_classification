@@ -27,6 +27,7 @@ pipeline {
     stage('Push to git'){
       steps{
         sh 'git add .'
+        sh 'git commit -m "commit" '
         sh 'git push origin master'
       }
     }
