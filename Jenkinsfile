@@ -28,7 +28,7 @@ pipeline {
       steps{
         sh 'git status'
         sh 'git add .'
-        sh 'git commit -m "classification results"'
+        sh 'git commit -m classification results '
         sh 'git remote add origin'
       }
     }
