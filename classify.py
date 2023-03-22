@@ -51,10 +51,13 @@ def classify():
             'date': now.strftime("%d %b %G" ),
             'time': now.strftime("%H:%M")
         })
+
     dataframe = pd.DataFrame(data_list)
-    dataframe
-    # with open('classification.csv', 'a') as c:
-    #     c.write(str(data_list))
+   
+    
+    with open('classification.csv', 'a') as c:
+        csv_data = dataframe.to_csv(dataframe)
+        c.write(str(csv_data))
        
         
     return jsonify(str(data_list))

@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Run prediction') {
       steps {
-        sh 'curl -X POST http://127.0.0.1:9191/classify -o prediction.csv'
+        sh 'curl -X POST http://127.0.0.1:9191/classify'
       }
     }
     
