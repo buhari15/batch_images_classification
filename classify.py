@@ -52,8 +52,8 @@ def classify():
             'time': now.strftime("%H:%M")
         })
     
-    with open('classification.csv', 'a') as c:
-        c.write(str(data_list))
+    # with open('classification.csv', 'a') as c:
+    #     c.write(str(data_list))
        
         
     return jsonify(str(data_list))
