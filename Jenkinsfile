@@ -24,12 +24,13 @@ pipeline {
         sh 'curl -X POST http://127.0.0.1:9191/classify'
       }
     }
-  }
-  post{
-    success {
-      sh 'git status'
-      sh 'git add '
-      sh 'git commit -m "classification'
+    stage('Push to git'){
+      steps{
+        sh 'git status'
+        sh 'git add .'
+        sh 'git commit -m "classification results'
+      }
     }
   }
+  
 }
