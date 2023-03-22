@@ -11,7 +11,7 @@ from datetime import datetime
 import datetime
 import json
 from flask import jsonify
-import pprint
+import pandas as pd
 
 
 app = flask.Flask(__name__)
@@ -51,7 +51,8 @@ def classify():
             'date': now.strftime("%d %b %G" ),
             'time': now.strftime("%H:%M")
         })
-    
+    dataframe = pd.DataFrame(data_list)
+    dataframe
     # with open('classification.csv', 'a') as c:
     #     c.write(str(data_list))
        
