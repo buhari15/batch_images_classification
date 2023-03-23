@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  triggers{
+    cron('0 10-11 * * * ')
+  }
   stages {
     stage('Installing requirements') {
       steps {
