@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Flask Run'){
       steps{
-        sh 'flask run'
+        sh 'python classify.py'
       }
     }
    
