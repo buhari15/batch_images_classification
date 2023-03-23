@@ -13,7 +13,7 @@ pipeline {
         echo 'All python code compiled'
       }
     }
-    stage('Start Flask app') {
+    stage('Activate virtual environment') {
       steps {
         sh 'python3 classify.py &'
         
