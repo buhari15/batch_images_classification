@@ -16,7 +16,6 @@ pipeline {
     stage('Activate virtual environment') {
       steps {
         sh 'source "./venv/bin/activate"'
-        
         echo 'Virtual environment activated'
         
       }
