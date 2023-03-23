@@ -15,20 +15,12 @@ pipeline {
     }
     stage('Activate virtual environment') {
       steps {
-        sh 'python3 classify.py &'
+        sh 'https://github.com/buhari15/model_to_production/blob/master/activate_venv.sh'
+        echo 'Virtual environment activated'
         
-        
-
       }
     }
-    stage('Run curl') {
-      steps {
-        
-        sh 'curl http://127.0.0.1:5000/classify'
-        
-
-      }
-    }
+   
  
     
   }
