@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Start Flask app') {
       steps {
-        sh 'python3 classify.py '
+        sh 'python3 classify.py &'
         sh 'curl -X POST http://127.0.0.1:9191/classify'
 
       }
