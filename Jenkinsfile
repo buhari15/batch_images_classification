@@ -15,12 +15,20 @@ pipeline {
     }
     stage('Start Flask app') {
       steps {
-        sh 'python3 classify.py '
+        sh 'nohup python3 classify.py &'
+        
         
 
       }
     }
-    
+    stage('Run curl') {
+      steps {
+        
+        sh 'curl http://127.0.0.1:5000/classify'
+        
+
+      }
+    }
  
     
   }
