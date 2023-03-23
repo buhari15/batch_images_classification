@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Start Flask'){
       steps{
-        sh 'sudo nohup python3 classify.py'
+        sh 'python3 classify.py'
       }
 
     }
