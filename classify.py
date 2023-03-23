@@ -65,7 +65,7 @@ if __name__ == "__main__":
     print("Loading the model please wait")
 
     load_model_trained()
-    app.run(debug=True)
+    app.run(debug=True, port=2121)
     
     
 
