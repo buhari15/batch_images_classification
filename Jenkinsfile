@@ -19,11 +19,7 @@ pipeline {
 
       }
     }
-    stage('Flask Run'){
-      steps{
-        sh 'python3 classify.py'
-      }
-    }
+    
    
     
   }
