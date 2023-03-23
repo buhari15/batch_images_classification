@@ -1,7 +1,7 @@
 pipeline {
   agent any
   triggers{
-    cron('H/15 * * * *')
+    cron(' 0 10 * * *')
   }
   stages {
     stage('Installing requirements') {
@@ -11,13 +11,12 @@ pipeline {
       }
     }
    
-    
     stage('Start Flask'){
       steps{
         sh 'python3 classify.py '
       }
 
-    }
+    
    
  
     
