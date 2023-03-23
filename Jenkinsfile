@@ -15,7 +15,8 @@ pipeline {
     }
     stage('Activate virtual environment') {
       steps {
-        sh 'activate_venv.sh'
+        sh 'http://localhost:8080/job/model_to_production/106/execution/node/3/ws/activate_venv.sh'
+        
         echo 'Virtual environment activated'
         
       }
