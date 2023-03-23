@@ -1,7 +1,7 @@
 pipeline {
   agent any
   triggers{
-    cron(' 0 10 * * *')
+    cron('0 10 * * *')
   }
   stages {
     stage('Installing requirements') {
@@ -15,11 +15,7 @@ pipeline {
       steps{
         sh 'python3 classify.py '
       }
-
-    
-   
- 
-    
   }
   
+}
 }
