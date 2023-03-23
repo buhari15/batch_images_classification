@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Activate virtual environment') {
       steps {
-        sh 'https://github.com/buhari15/model_to_production/blob/master/activate_venv.sh'
+        sh 'activate_venv.sh'
         echo 'Virtual environment activated'
         
       }
