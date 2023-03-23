@@ -7,12 +7,7 @@ pipeline {
         sh 'python3 -m pip install -r requirements.txt'
       }
     }
-    stage('Compile all') {
-      steps {
-        sh 'python3 -m py_compile classify.py'
-        echo 'All python code compiled'
-      }
-    }
+   
     
     stage('Start Flask'){
       steps{
