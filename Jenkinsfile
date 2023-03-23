@@ -15,7 +15,6 @@ pipeline {
       steps{
         sh 'python3 classify.py '
       }
-  }
-  
+  } 
 }
 }
