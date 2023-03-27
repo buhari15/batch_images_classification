@@ -13,7 +13,7 @@ pipeline {
    
     stage('Start Flask'){
       steps{
-        sh 'nohup python3 -m flask --app classify run &'
+        sh 'nohup python3 classify.py &'
       }
   } 
 }
