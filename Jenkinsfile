@@ -15,6 +15,12 @@ pipeline {
       steps{
         sh 'nohup python3 classify.py &'
       }
-  } 
+  }
+  stage('Run Prediction') {
+            steps {
+                sh 'curl -X POST http://127.0.0.1:2121/classify'
+            }
+        }
+   
 }
 }
