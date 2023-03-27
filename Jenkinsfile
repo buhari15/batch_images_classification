@@ -13,8 +13,8 @@ pipeline {
    
     stage('Start Flask'){
       steps{
-        sh ' nohup python3  & '
-        sh 'python3 classify.py'
+        sh 'BUILD_ID=dontKillMe python3 classify.py  & '
+        
       }
   }
   stage('Run Prediction') {
