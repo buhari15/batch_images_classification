@@ -13,7 +13,7 @@ pipeline {
    
     stage('Start Flask'){
       steps{
-        sh ' nohup python3 -c classify.py 2>&1 & && sleep 4 '
+        sh ' nohup python3 -c classify.py & && sleep 4 '
       }
   }
   stage('Run Prediction') {
