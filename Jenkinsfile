@@ -23,10 +23,18 @@ pipeline {
       }
   }
     stage('Run Prediction') {
-        steps {
+        steps{
           sh 'curl -X POST http://127.0.0.1:5000/classify'
-            }
         }
+      }
+    
+    stage('Push to git'){
+      steps{
+        sh 'git add .'
+        sh 'git commit -m "Updated"'
+        sh 'git push origin master'
+      }
+    }
    
 }
 }
