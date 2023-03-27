@@ -32,7 +32,8 @@ pipeline {
       steps{
         sh 'git add .'
         sh 'git commit -m "Updated"'
-        sh 'git push -f origin master'
+        sh 'git pull origin master'
+        sh 'git push origin master'
       }
     }
    
