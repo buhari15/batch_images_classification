@@ -33,7 +33,7 @@ pipeline {
         sh 'git add .'
         sh 'git commit -m "Updated"'
         sh 'git pull origin master'
-        sh 'git push origin master'
+        sh 'git push -f origin master'
       }
     }
    
