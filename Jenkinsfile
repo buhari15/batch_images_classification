@@ -13,7 +13,7 @@ pipeline {
    
     stage('Start Flask'){
       steps{
-        sh 'BUILD_ID=dontKillMe nohup python3 classify.py &'
+        sh 'JENKINS_NODE_COOKIE=dontKillMe nohup python3 classify.py &'
         
       }
   }
