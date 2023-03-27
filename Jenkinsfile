@@ -13,7 +13,7 @@ pipeline {
    
     stage('Start Flask'){
       steps{
-        sh 'python3 classify.py '
+        sh 'flask --app classify run '
       }
   } 
 }
