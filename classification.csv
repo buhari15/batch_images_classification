@@ -1,101 +1,22 @@
-,images_name,label,probability,date,time
-0,trouser.jpg,Trouser,1.0,22 Mar 2023,12:01
-1,sandal.jpg,Sandal,1.0,22 Mar 2023,12:01
-2,sneaker1.jpg,Sneaker,0.99999356,22 Mar 2023,12:01
-3,shirt.png,T-Shirt/Top,1.0,22 Mar 2023,12:01
-4,sneaker2.jpg,Sneaker,1.0,22 Mar 2023,12:01
-5,pullover1.jpg,Shirt,1.0,22 Mar 2023,12:01
-6,pullover.jpg,Pullover,1.0,22 Mar 2023,12:01
-7,bag1.jpg,Bag,1.0,22 Mar 2023,12:01
-8,top.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-9,coat.jpg,Shirt,1.0,22 Mar 2023,12:01
-10,trouser1.jpg,Trouser,1.0,22 Mar 2023,12:01
-11,t-shirt top.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-12,ankle boot.jpg,Sandal,1.0,22 Mar 2023,12:01
-13,sht.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-14,sht1.jpg,Dress,1.0,22 Mar 2023,12:01
-15,sneaker.jpg,Sandal,1.0,22 Mar 2023,12:01
-16,ankle_boot.jpg,Ankle Boot,1.0,22 Mar 2023,12:01
-17,sandal1.jpg,Sandal,1.0,22 Mar 2023,12:01
-18,sandal3.jpg,Sandal,1.0,22 Mar 2023,12:01
-19,bag.jpg,Bag,1.0,22 Mar 2023,12:01
-0,trouser.jpg,Trouser,1.0,22 Mar 2023,12:01
-1,sandal.jpg,Sandal,1.0,22 Mar 2023,12:01
-2,sneaker1.jpg,Sneaker,0.99999356,22 Mar 2023,12:01
-3,shirt.png,T-Shirt/Top,1.0,22 Mar 2023,12:01
-4,sneaker2.jpg,Sneaker,1.0,22 Mar 2023,12:01
-5,pullover1.jpg,Shirt,1.0,22 Mar 2023,12:01
-6,pullover.jpg,Pullover,1.0,22 Mar 2023,12:01
-7,bag1.jpg,Bag,1.0,22 Mar 2023,12:01
-8,top.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-9,coat.jpg,Shirt,1.0,22 Mar 2023,12:01
-10,trouser1.jpg,Trouser,1.0,22 Mar 2023,12:01
-11,t-shirt top.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-12,ankle boot.jpg,Sandal,1.0,22 Mar 2023,12:01
-13,sht.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-14,sht1.jpg,Dress,1.0,22 Mar 2023,12:01
-15,sneaker.jpg,Sandal,1.0,22 Mar 2023,12:01
-16,ankle_boot.jpg,Ankle Boot,1.0,22 Mar 2023,12:01
-17,sandal1.jpg,Sandal,1.0,22 Mar 2023,12:01
-18,sandal3.jpg,Sandal,1.0,22 Mar 2023,12:01
-19,bag.jpg,Bag,1.0,22 Mar 2023,12:01
-0,trouser.jpg,Trouser,1.0,22 Mar 2023,12:01
-1,sandal.jpg,Sandal,1.0,22 Mar 2023,12:01
-2,sneaker1.jpg,Sneaker,0.99999356,22 Mar 2023,12:01
-3,shirt.png,T-Shirt/Top,1.0,22 Mar 2023,12:01
-4,sneaker2.jpg,Sneaker,1.0,22 Mar 2023,12:01
-5,pullover1.jpg,Shirt,1.0,22 Mar 2023,12:01
-6,pullover.jpg,Pullover,1.0,22 Mar 2023,12:01
-7,bag1.jpg,Bag,1.0,22 Mar 2023,12:01
-8,top.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-9,coat.jpg,Shirt,1.0,22 Mar 2023,12:01
-10,trouser1.jpg,Trouser,1.0,22 Mar 2023,12:01
-11,t-shirt top.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-12,ankle boot.jpg,Sandal,1.0,22 Mar 2023,12:01
-13,sht.jpg,T-Shirt/Top,1.0,22 Mar 2023,12:01
-14,sht1.jpg,Dress,1.0,22 Mar 2023,12:01
-15,sneaker.jpg,Sandal,1.0,22 Mar 2023,12:01
-16,ankle_boot.jpg,Ankle Boot,1.0,22 Mar 2023,12:01
-17,sandal1.jpg,Sandal,1.0,22 Mar 2023,12:01
-18,sandal3.jpg,Sandal,1.0,22 Mar 2023,12:01
-19,bag.jpg,Bag,1.0,22 Mar 2023,12:01
-0,trouser.jpg,Trouser,1.0,23 Mar 2023,13:17
-1,sandal.jpg,Sandal,1.0,23 Mar 2023,13:17
-2,sneaker1.jpg,Sneaker,0.99999356,23 Mar 2023,13:17
-3,shirt.png,T-Shirt/Top,1.0,23 Mar 2023,13:17
-4,sneaker2.jpg,Sneaker,1.0,23 Mar 2023,13:17
-5,pullover1.jpg,Shirt,1.0,23 Mar 2023,13:17
-6,pullover.jpg,Pullover,1.0,23 Mar 2023,13:17
-7,bag1.jpg,Bag,1.0,23 Mar 2023,13:17
-8,top.jpg,T-Shirt/Top,1.0,23 Mar 2023,13:17
-9,coat.jpg,Shirt,1.0,23 Mar 2023,13:17
-10,trouser1.jpg,Trouser,1.0,23 Mar 2023,13:17
-11,t-shirt top.jpg,T-Shirt/Top,1.0,23 Mar 2023,13:17
-12,ankle boot.jpg,Sandal,1.0,23 Mar 2023,13:17
-13,sht.jpg,T-Shirt/Top,1.0,23 Mar 2023,13:17
-14,sht1.jpg,Dress,1.0,23 Mar 2023,13:17
-15,sneaker.jpg,Sandal,1.0,23 Mar 2023,13:17
-16,ankle_boot.jpg,Ankle Boot,1.0,23 Mar 2023,13:17
-17,sandal1.jpg,Sandal,1.0,23 Mar 2023,13:17
-18,sandal3.jpg,Sandal,1.0,23 Mar 2023,13:17
-19,bag.jpg,Bag,1.0,23 Mar 2023,13:17
-0,trouser.jpg,Trouser,1.0,27 Mar 2023,13:27
-1,sandal.jpg,Sandal,1.0,27 Mar 2023,13:27
-2,sneaker1.jpg,Sneaker,0.99999356,27 Mar 2023,13:27
-3,shirt.png,T-Shirt/Top,1.0,27 Mar 2023,13:27
-4,sneaker2.jpg,Sneaker,1.0,27 Mar 2023,13:27
-5,pullover1.jpg,Shirt,1.0,27 Mar 2023,13:27
-6,pullover.jpg,Pullover,1.0,27 Mar 2023,13:27
-7,bag1.jpg,Bag,1.0,27 Mar 2023,13:27
-8,top.jpg,T-Shirt/Top,1.0,27 Mar 2023,13:27
-9,coat.jpg,Shirt,1.0,27 Mar 2023,13:27
-10,trouser1.jpg,Trouser,1.0,27 Mar 2023,13:27
-11,t-shirt top.jpg,T-Shirt/Top,1.0,27 Mar 2023,13:27
-12,ankle boot.jpg,Sandal,1.0,27 Mar 2023,13:27
-13,sht.jpg,T-Shirt/Top,1.0,27 Mar 2023,13:27
-14,sht1.jpg,Dress,1.0,27 Mar 2023,13:27
-15,sneaker.jpg,Sandal,1.0,27 Mar 2023,13:27
-16,ankle_boot.jpg,Ankle Boot,1.0,27 Mar 2023,13:27
-17,sandal1.jpg,Sandal,1.0,27 Mar 2023,13:27
-18,sandal3.jpg,Sandal,1.0,27 Mar 2023,13:27
-19,bag.jpg,Bag,1.0,27 Mar 2023,13:27
+image_name,label,probability,date,time
+trouser.jpg,Trouser,0.9999449253082275,18 May 2023,23:22:00
+sandal.jpg,Sandal,0.9054763317108154,18 May 2023,23:22:00
+sneaker1.jpg,Sneaker,0.9837860465049744,18 May 2023,23:22:00
+shirt.png,T-Shirt/Top,0.4230763018131256,18 May 2023,23:22:00
+sneaker2.jpg,Sneaker,0.999190628528595,18 May 2023,23:22:00
+pullover1.jpg,Shirt,0.801504373550415,18 May 2023,23:22:00
+pullover.jpg,Pullover,0.9875483512878418,18 May 2023,23:22:00
+bag1.jpg,Bag,0.9998107552528381,18 May 2023,23:22:00
+top.jpg,T-Shirt/Top,0.713172435760498,18 May 2023,23:22:00
+coat.jpg,Shirt,0.5811683535575867,18 May 2023,23:22:00
+trouser1.jpg,Trouser,0.9999980926513672,18 May 2023,23:22:00
+t-shirt top.jpg,T-Shirt/Top,0.7818081378936768,18 May 2023,23:22:00
+ankle boot.jpg,Sandal,0.9998931884765625,18 May 2023,23:22:00
+sht.jpg,T-Shirt/Top,0.9898234009742737,18 May 2023,23:22:00
+sht1.jpg,Dress,0.4087347984313965,18 May 2023,23:22:00
+fashion-shoes-sneakers.jpg,Trouser,0.2961207330226898,18 May 2023,23:22:00
+sneaker.jpg,Sandal,0.9471578598022461,18 May 2023,23:22:00
+ankle_boot.jpg,Ankle Boot,0.775910496711731,18 May 2023,23:22:00
+sandal1.jpg,Sandal,0.9995087385177612,18 May 2023,23:22:00
+sandal3.jpg,Sandal,0.9998736381530762,18 May 2023,23:22:00
+bag.jpg,Bag,0.9095094203948975,18 May 2023,23:22:42
