@@ -30,7 +30,7 @@ pipeline {
         
         // Commit and push the classification results to GitHub
         script {
-          withCredentials([usernamePassword(credentialsId: 'github-credentials' )]) {
+          withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'GITHUB_PASSWORD', usernameVariable: 'GITHUB_USERNAME')]) {
             git credentialsId: 'github-credentials', url: 'https://github.com/buhari15/batch_images_classification.git'
             sh 'git add classification.csv'
             sh 'git commit -m "Add classification results"'
