@@ -13,7 +13,7 @@ pipeline {
     }
    stage('Compile all') {
       steps {
-        sh 'python3 -m py_compile classify.py'
+        sh 'python3 -m py_compile code/classify.py'
         echo 'All python code compiled'
       }
     }
