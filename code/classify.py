@@ -125,8 +125,21 @@ def classify():
 
     dataframe = pd.DataFrame(data_list)
     workspace_dir = os.environ.get('WORKSPACE')
+    
+    # Specify the path for the classification.csv file in the workspace directory
     csv_file_path = os.path.join(workspace_dir, 'classification.csv')
-    dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile('classification.csv'), index=False)
+
+    # Load the existing classified image filenames from the CSV file
+    existing_data = pd.DataFrame()
+    if os.path.isfile(csv_file_path):
+        existing_data = pd.read_csv(csv_file_path)
+    
+    # Append the new data to the existing data
+    new_data = pd.DataFrame(data_list)
+    updated_data = pd.concat([existing_data, new_data], ignore_index=True)
+    
+    # Save the updated data to the CSV file
+    updated_data.to_csv(csv_file_path, index=False)
 
     return jsonify(data_list)
 
