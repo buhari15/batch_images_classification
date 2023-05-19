@@ -34,7 +34,7 @@ pipeline {
             git credentialsId: 'github-credentials', url: 'https://github.com/buhari15/batch_images_classification.git'
             sh 'git add classification.csv'
             sh 'git commit -m "Add classification results"'
-            sh 'git push origin HEAD:master'
+            sh 'git push origin HEAD:refs/heads/master'
           }
         }
       }
