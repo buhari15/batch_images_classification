@@ -18,7 +18,8 @@ pipeline {
     }
     stage('Start Flask'){
       steps{
-        sh 'python3 classify.py &'
+        sh 'source venv/bin/activate && python3 classify.py &'
+        sh 'source venv/bin/activate && sleep 20'
         
       }
   }
@@ -27,11 +28,11 @@ pipeline {
           sh 'curl -X POST http://127.0.0.1:5000/classify'
 
           // Commit and push the classification results to GitHub
-          sh 'git config --global user.email "jenkins@example.com"'
-          sh 'git config --global user.name "Jenkins"'
-          sh 'git add classification.csv'
-          sh 'git commit -m "Add classification results"'
-          sh 'git push origin master' 
+          // sh 'git config --global user.email "jenkins@example.com"'
+          // sh 'git config --global user.name "Jenkins"'
+          // sh 'git add classification.csv'
+          // sh 'git commit -m "Add classification results"'
+          // sh 'git push origin master' 
         }
       }
     
