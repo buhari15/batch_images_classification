@@ -123,11 +123,13 @@ def classify():
     # result_json = json.loads(dumps(data_list, default=str))
     # collection.insert_many(result_json)
 
-    # Save classification results to CSV file
-    csv_file_path = os.path.join(os.getcwd(), 'classification.csv')
+  
+        # Storing the classified result in CSV
     dataframe = pd.DataFrame(data_list)
+    csv_file_path = os.path.join(os.getcwd(), 'classification.csv')
+    print("Current working directory before saving:", os.getcwd())
     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
-
+    print("Current working directory after saving:", os.getcwd())
 
     return jsonify(data_list)
 
