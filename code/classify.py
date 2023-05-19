@@ -3,7 +3,6 @@ from tensorflow import keras
 from PIL import Image
 import io
 import flask
-from werkzeug.serving import run_simple
 import os
 import numpy as np
 from preprocessing import processing_img
@@ -13,7 +12,7 @@ import json
 from flask import jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
-import boto3
+# import boto3
 import pandas as pd
 import PIL.Image as Image
 from pymongo import MongoClient
