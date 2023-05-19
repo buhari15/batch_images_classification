@@ -27,7 +27,7 @@ pipeline {
     stage('Run Prediction') {
       steps {
         script {
-          // Save classification results using curl
+        
           sh 'curl -X POST http://127.0.0.1:5000/classify'
           
         }
