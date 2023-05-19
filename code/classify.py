@@ -132,7 +132,7 @@ def classify():
     # workspace_directory = "/Users/buhariabubakar/.jenkins/war/workspace/batch_images_classification"
     # print("Jenkins workspace directory:", workspace_directory)
     # Storing the classified result in the Jenkins workspace directory
-    workspace_dir = "/Users/buhariabubakar/.jenkins/war/workspace/batch_images_classification"
+    workspace_dir = "/Users/buhariabubakar/.jenkins/workspace/batch_images_classification"
     csv_file_path = os.path.join(workspace_dir, 'classification.csv')
     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
 
