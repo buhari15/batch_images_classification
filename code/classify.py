@@ -136,13 +136,21 @@ def classify():
     csv_file_path = os.path.join(workspace_dir, 'classification.csv')
     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
 
+    # # Commit and push the classification results to GitHub
+    # os.system('cd' + workspace_dir)
+    # os.system('git fetch origin')
+    # os.system('git add classification.csv')
+    # os.system('git commit -m "Add classification results"')
+    # os.system('git push origin HEAD:master')
+    # Change directory to the workspace
+    os.chdir(workspace_dir)
+
+    # Pull the latest changes from the remote repository
+    os.system('git pull')
+
     # Commit and push the classification results to GitHub
-    os.system('cd' + workspace_dir)
-    os.system('git fetch origin')
-    os.system('git merge origin/master')
     os.system('git add classification.csv')
     os.system('git commit -m "Add classification results"')
-    os.system('git pull --rebase')
     os.system('git push origin HEAD:master')
 
     return jsonify(data_list)
