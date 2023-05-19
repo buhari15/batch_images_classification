@@ -15,6 +15,10 @@ If the model can not find new images, it will not save any result.<br>
 * The output of batch classification if no new images are found.
 ![No new images are found](https://github.com/buhari15/batch_images_classification/blob/master/No_new_images.png)
 
+Basic model metrics can be found below:
+![Metrics](https://github.com/buhari15/batch_images_classification/blob/master/code/metrics.py)
+
+
 ## Author
 
 **Buhari Abubakar**
