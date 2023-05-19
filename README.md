@@ -1,6 +1,6 @@
 # From model to production
 
-In this project a simple images classification model was built using the Keras Sequential API.
+Simple images classification model using the Keras Sequential API.
 
 The classification is run on batch at midmight. 
 
