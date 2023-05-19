@@ -18,6 +18,9 @@ If the model can not find new images, it will not save any result.<br>
 Basic model metrics can be found below:
 ![Metrics](https://github.com/buhari15/batch_images_classification/blob/master/code/metrics.py)
 
+It also possible to load images from the cloud AWS S3. While the result can be save into MongoDB.<br>
+Check here for the code ![config](https://github.com/buhari15/batch_images_classification/blob/master/code/metrics.py)
+
 
 ## Author
 
