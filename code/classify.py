@@ -142,6 +142,7 @@ def classify():
     os.system('git merge origin/master')
     os.system('git add classification.csv')
     os.system('git commit -m "Add classification results"')
+    os.system('git pull --rebase')
     os.system('git push origin HEAD:master')
 
     return jsonify(data_list)
