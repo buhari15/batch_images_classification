@@ -5,6 +5,9 @@ Simple images classification model using the Keras Sequential API.
 The classification is run on batch at midmight. 
 
 Jenkins pipeline is used to schedule a batch prediction with a Flask API endpoints.
+Graphical representation of the processes. <br>
+![Process](https://github.com/buhari15/batch_images_classification/blob/master/process.png)
+
 If new images are found on the images folder, the model will predict the classes of the new found images. 
 
 The classification result is save in csv file and push to Github. Below is the output of the classification.
