@@ -13,7 +13,7 @@ The classification result is save in csv file and push to Github. Below is the o
 
 If the model can not find new images, it will not save any result.<br>
 * The output of batch classification if no new images are found.
-![No new images are found](https://github.com/buhari15/batch_images_classification/blob/master/Screenshot%202023-05-19%20at%2016.46.05.png](https://github.com/buhari15/batch_images_classification/blob/master/No_new_images.png)
+![No new images are found](https://github.com/buhari15/batch_images_classification/blob/master/No_new_images.png)
 
 ## Author
 
