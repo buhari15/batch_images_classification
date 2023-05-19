@@ -87,16 +87,6 @@ def model_fit(model):
     """
     history = model.fit(x_train, y_train, batch_size=32, epochs=1, validation_data=(x_test, y_test),
                             shuffle=True)
-        # validation_data = (x_test, y_test),
-
-        # structure_model = model.to_json()
-        #
-        # with open("/Users/buhariabubakar/PycharmProjects/model_production/structure_model.json", "w") as file:
-        #     file.write(structure_model)
-        #
-        # weights_model = model.save_weights("/Users/buhariabubakar/PycharmProjects/model_production/weights_model.h5")
-        # model_save = model.save("/Users/buhariabubakar/PycharmProjects/model_production/train_model.h5")
-        #structure_model, weights_model, model_save
     return history
 
 #
