@@ -126,13 +126,13 @@ def classify():
 #     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
 #     dataframe.to_csv('classification.csv', mode='a', header=not os.path.isfile('classification.csv'), index=False)
 # Get the Jenkins workspace directory
-    workspace_dir = os.environ.get('WORKSPACE')
+      workspace_dir = os.environ.get('WORKSPACE')
     
     # Specify the path for the classification.csv file
-    csv_file_path = os.path.join(workspace_dir, 'classification.csv')
+      csv_file_path = os.path.join(workspace_dir, 'classification.csv')
 
     # Append the data to the CSV file
-    dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
+      dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
 
 
     return jsonify(data_list)
