@@ -130,6 +130,8 @@ def classify():
     print("Current working directory before saving:", os.getcwd())
     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
     print("Current working directory after saving:", os.getcwd())
+    workspace_directory = os.environ.get('WORKSPACE')
+    print("Jenkins workspace directory:", workspace_directory)
 
     return jsonify(data_list)
 
