@@ -18,8 +18,8 @@ pipeline {
     }
     stage('Start Flask'){
       steps{
-        sh 'source venv/bin/activate && python3 classify.py &'
-        sh 'source venv/bin/activate && sleep 20'
+        sh ' python3 classify.py & sleep 20'
+       
         
       }
   }
