@@ -29,10 +29,10 @@ pipeline {
           sh 'curl -X POST http://127.0.0.1:5000/classify'
           
           // Commit and push the classification results to GitHub
-          git branch: 'master', credentialsId: 'github-credentials', url: 'https://github.com/buhari15/batch_images_classification.git'
-          sh 'git add classification.csv'
-          sh 'git commit -m "Add classification results"'
-          sh 'git push origin master'
+//           git branch: 'master', credentialsId: 'github-credentials', url: 'https://github.com/buhari15/batch_images_classification.git'
+//           sh 'git add classification.csv'
+//           sh 'git commit -m "Add classification results"'
+//           sh 'git push origin master'
         }
       }
     }
