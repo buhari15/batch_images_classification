@@ -1,0 +1,142 @@
+[
+  {
+    "date": "19 May 2023",
+    "image_name": "sandal.jpg",
+    "label": "Sandal",
+    "probability": 0.9054763317108154,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sneaker1.jpg",
+    "label": "Sneaker",
+    "probability": 0.9837860465049744,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "shirt.png",
+    "label": "T-Shirt/Top",
+    "probability": 0.4230763018131256,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sneaker2.jpg",
+    "label": "Sneaker",
+    "probability": 0.999190628528595,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "pullover1.jpg",
+    "label": "Shirt",
+    "probability": 0.801504373550415,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "pullover.jpg",
+    "label": "Pullover",
+    "probability": 0.9875483512878418,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "bag1.jpg",
+    "label": "Bag",
+    "probability": 0.9998107552528381,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "top.jpg",
+    "label": "T-Shirt/Top",
+    "probability": 0.713172435760498,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "coat.jpg",
+    "label": "Shirt",
+    "probability": 0.5811683535575867,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "trouser1.jpg",
+    "label": "Trouser",
+    "probability": 0.9999980926513672,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "t-shirt top.jpg",
+    "label": "T-Shirt/Top",
+    "probability": 0.7818081378936768,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "ankle boot.jpg",
+    "label": "Sandal",
+    "probability": 0.9998931884765625,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sht.jpg",
+    "label": "T-Shirt/Top",
+    "probability": 0.9898234009742737,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sht1.jpg",
+    "label": "Dress",
+    "probability": 0.4087347984313965,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "fashion-shoes-sneakers.jpg",
+    "label": "Trouser",
+    "probability": 0.2961207330226898,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sneaker.jpg",
+    "label": "Sandal",
+    "probability": 0.9471578598022461,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "ankle_boot.jpg",
+    "label": "Ankle Boot",
+    "probability": 0.775910496711731,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sandal1.jpg",
+    "label": "Sandal",
+    "probability": 0.9995087385177612,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "sandal3.jpg",
+    "label": "Sandal",
+    "probability": 0.9998736381530762,
+    "time": "13:41:19"
+  },
+  {
+    "date": "19 May 2023",
+    "image_name": "bag.jpg",
+    "label": "Bag",
+    "probability": 0.9095094203948975,
+    "time": "13:41:19"
+  }
+]
