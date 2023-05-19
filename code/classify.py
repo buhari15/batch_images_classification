@@ -139,6 +139,7 @@ def classify():
     # Commit and push the classification results to GitHub
     os.system('cd' + workspace_dir)
     os.system('git fetch origin')
+    os.system('git merge origin/master')
     os.system('git add classification.csv')
     os.system('git commit -m "Add classification results"')
     os.system('git push origin HEAD:master')
