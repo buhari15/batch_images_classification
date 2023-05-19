@@ -121,9 +121,11 @@ def classify():
     # collection = mongodb_connect()
     # result_json = json.loads(dumps(data_list, default=str))
     # collection.insert_many(result_json)
-
     dataframe = pd.DataFrame(data_list)
-    dataframe.to_csv('classification.csv', mode='a', header=not os.path.isfile('classification.csv'), index=False)
+    csv_file_path = os.path.join(os.getcwd(), 'classification.csv')
+    dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
+    
+#     dataframe.to_csv('classification.csv', mode='a', header=not os.path.isfile('classification.csv'), index=False)
 
     return jsonify(data_list)
 
