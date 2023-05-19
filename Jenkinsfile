@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Start Flask'){
       steps{
-        sh ' python3 classify.py & sleep 20'
+        sh ' python3 code/classify.py & sleep 20'
        
         
       }
