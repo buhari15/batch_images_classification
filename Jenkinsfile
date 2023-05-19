@@ -31,9 +31,9 @@ pipeline {
           // Commit and push the classification results to GitHub
           // sh 'git config --global user.email "jenkins@example.com"'
           // sh 'git config --global user.name "Jenkins"'
-          // sh 'git add classification.csv'
-          // sh 'git commit -m "Add classification results"'
-          // sh 'git push origin master' 
+          sh 'git add classification.csv'
+          sh 'git commit -m "Add classification results"'
+          sh 'git push origin master' 
         }
       }
     
