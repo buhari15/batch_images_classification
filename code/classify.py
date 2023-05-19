@@ -123,8 +123,7 @@ def classify():
     # result_json = json.loads(dumps(data_list, default=str))
     # collection.insert_many(result_json)
 
-    dataframe = pd.DataFrame(data_list)
-    workspace_dir = "http://localhost:8080/job/batch_images_classification/execution/node/3/ws/classification.csv"
+    workspace_dir = os.environ.get('WORKSPACE')
     
     # Specify the path for the classification.csv file in the workspace directory
     csv_file_path = os.path.join(workspace_dir, 'classification.csv')
