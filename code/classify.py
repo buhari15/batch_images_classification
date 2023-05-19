@@ -126,12 +126,20 @@ def classify():
   
         # Storing the classified result in CSV
     dataframe = pd.DataFrame(data_list)
-    csv_file_path = os.path.join(os.getcwd(), 'classification.csv')
-    print("Current working directory before saving:", os.getcwd())
+    # csv_file_path = os.path.join(os.getcwd(), 'classification.csv')
+    # print("Current working directory before saving:", os.getcwd())
+    # dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
+    # workspace_directory = "/Users/buhariabubakar/.jenkins/war/workspace/batch_images_classification"
+    # print("Jenkins workspace directory:", workspace_directory)
+    # Storing the classified result in the Jenkins workspace directory
+    workspace_dir = "/Users/buhariabubakar/.jenkins/war/workspace/batch_images_classification"
+    csv_file_path = os.path.join(workspace_dir, 'classification.csv')
     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
-    print("Current working directory after saving:", os.getcwd())
-    workspace_directory = os.environ.get('WORKSPACE')
-    print("Jenkins workspace directory:", workspace_directory)
+
+    # Commit and push the classification results to GitHub
+    os.system('git add classification.csv')
+    os.system('git commit -m "Add classification results"')
+    os.system('git push origin HEAD:master')
 
     return jsonify(data_list)
 
