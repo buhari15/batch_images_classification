@@ -3,6 +3,7 @@ from tensorflow import keras
 from PIL import Image
 import io
 import flask
+from werkzeug.serving import run_simple
 import os
 import numpy as np
 from preprocessing import processing_img
@@ -12,7 +13,7 @@ import json
 from flask import jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
-# import boto3
+import boto3
 import pandas as pd
 import PIL.Image as Image
 from pymongo import MongoClient
@@ -121,19 +122,11 @@ def classify():
     # collection = mongodb_connect()
     # result_json = json.loads(dumps(data_list, default=str))
     # collection.insert_many(result_json)
-#     dataframe = pd.DataFrame(data_list)
-#     csv_file_path = os.path.join(os.getcwd(), 'classification.csv')
-#     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
-#     dataframe.to_csv('classification.csv', mode='a', header=not os.path.isfile('classification.csv'), index=False)
-# Get the Jenkins workspace directory
-      workspace_dir = os.environ.get('WORKSPACE')
-    
-    # Specify the path for the classification.csv file
-      csv_file_path = os.path.join(workspace_dir, 'classification.csv')
 
-    # Append the data to the CSV file
-      dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
-
+    dataframe = pd.DataFrame(data_list)
+    workspace_dir = os.environ.get('WORKSPACE')
+    csv_file_path = os.path.join(workspace_dir, 'classification.csv')
+    dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile('classification.csv'), index=False)
 
     return jsonify(data_list)
 
