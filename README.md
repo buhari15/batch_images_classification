@@ -4,7 +4,7 @@ In this project a simple images classification model was built using the Keras S
 
 The classification is run on batch at midmight. 
 
-The Jenkins is used to schedule a batch prediction with a Flask API endpoints.
+Jenkins pipeline is used to schedule a batch prediction with a Flask API endpoints.
 If new images are found on the images folder, the model will predict the classes of the new found images. 
 
 The classification result is save in csv file and push to Github. Below is the output of the classification.
