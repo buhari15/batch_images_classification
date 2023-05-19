@@ -7,20 +7,18 @@ import numpy as np
 
 
 def processing_img(img):
-    img = img.convert('L')  # Convert image to grayscale
-    img = img.resize((28, 28))  # Resize image to (28, 28)
-    img_array = np.array(img)  # Convert PIL image to NumPy array
-    img_array = img_array / 255.0  # Normalize pixel values to the range [0, 1]
-    img_array = np.expand_dims(img_array, axis=0)  # Add an extra dimension at the beginning
+    """
+    This function preprocess the images before classification.
+    Return: array of images
+    """
+    img = img.convert('L')  
+    img = img.resize((28, 28))  
+    img_array = np.array(img)  
+    img_array = img_array / 255.0  
+    img_array = np.expand_dims(img_array, axis=0)  
     return img_array
 
 
-# def processing_img(img):
-#     img = keras.utils.load_img(img, color_mode="grayscale", target_size=(28, 28))
-#     img = keras.utils.img_to_array(img)
-#     img = np.expand_dims(img, 0)
-#     images = np.vstack([img])
 
-#     return images
 
 
