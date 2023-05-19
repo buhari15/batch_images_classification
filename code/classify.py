@@ -137,6 +137,8 @@ def classify():
     dataframe.to_csv(csv_file_path, mode='a', header=not os.path.isfile(csv_file_path), index=False)
 
     # Commit and push the classification results to GitHub
+    os.system('cd' + workspace_dir)
+    os.system('git fetch origin')
     os.system('git add classification.csv')
     os.system('git commit -m "Add classification results"')
     os.system('git push origin HEAD:master')
