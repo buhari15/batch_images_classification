@@ -61,7 +61,7 @@ def classify():
     data_list = []
     classified_images = set()
     found_new_images = False
-    images_path = "https://github.com/buhari15/batch_images_classification/tree/master/images"
+    images_path = "/Users/buhariabubakar/Desktop/Image_classification/images"
       # Load the existing classified image filenames from the CSV file
    
     if os.path.isfile('classification.csv'):
